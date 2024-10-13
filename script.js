@@ -26,8 +26,7 @@ function copyShortUrl(){
     window.getSelection().removeAllRanges();
 
     const copyButton = document.getElementById("copy");
-    const copyText = document.createElement("p");
+    const copyText = document.getElementById("copiedText");
     copyText.textContent = "Copied !";
-    copyText.classList.add("copy-text");
     copyButton.insertAdjacentElement("afterend", copyText);;
 }
