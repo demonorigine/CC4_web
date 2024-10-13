@@ -1,0 +1,121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8; 
+}
+
+.wrapper {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    width: 100%;
+    border-top: 5px solid #6c63ff; 
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.title img {
+    height: 45px;
+    width: 45px;
+    margin-right: 12px;
+}
+
+.title h2 {
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+}
+
+.content {
+    margin-bottom: 25px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.content input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.content input::placeholder {
+    color: #aaa;
+}
+
+.content input:focus {
+    border-color: #6c63ff; 
+}
+
+.details {
+    text-align: center;
+}
+
+.details p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.details div {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.copyBtn {
+    background-color: #f8f9fa;
+    color: #555;
+}
+
+button.copyBtn img {
+    width: 22px;
+    height: 22px;
+}
+
+button.copyBtn:hover {
+    background-color: #e2e6ea; 
+}
+
+button.generateLinkBtn {
+    background-color: #6c63ff; 
+    color: white;
+}
+
+button.generateLinkBtn:hover {
+    background-color: #5145d6; 
+}
+}
