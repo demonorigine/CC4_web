@@ -24,5 +24,10 @@ function copyShortUrl(){
     window.getSelection().addRange(range);
     document.execCommand("copy");
     window.getSelection().removeAllRanges();
-    alert("Lien copié : " + shortUrlElement.innerText);
+
+    const copyButton = document.getElementById("copy");
+    const copyText = document.createElement("p");
+    copyText.textContent = "Copied !";
+    copyText.classList.add("copy-text");
+    copyButton.insertAdjacentElement("afterend", copyText);;
 }
