@@ -1,4 +1,6 @@
 async function generateShortLink() {
+    const copyText = document.getElementById("copiedText");
+    copyText.textContent = "";
     const longUrl = document.getElementById("longUrl").value;
     const apiUrl = "https://tinyurl.com/api-create.php?url=" + encodeURIComponent(longUrl);
     console.log(apiUrl);
